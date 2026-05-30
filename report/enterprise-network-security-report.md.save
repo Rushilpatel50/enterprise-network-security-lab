@@ -1,7 +1,0 @@
-# Final Validation Results
-
-## Network Segmentation Validation
-
-| Test # | From         | To              | Expected | Actual | Status |
-|--------|--------------|-----------------|----------|--------|--------|
-| 1      | Kali 99      | DVWA :80        | PASS     | PASS   | b
