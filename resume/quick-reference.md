@@ -10,7 +10,6 @@ detection with logs, PCAPs, and a validation matrix."
 - 5 NICs on pfSense (WAN + 4 internal)
 - 23 firewall rules across 4 interfaces
 - 8 Emerging Threats rule categories
-- 3 custom Suricata rules (SID 9000001–9000003)
 - 8 attack types simulated
 - 12 validation tests — all passed
 - 40+ screenshots of evidence
@@ -20,7 +19,6 @@ detection with logs, PCAPs, and a validation matrix."
 - Firewall rule ordering and implicit deny
 - Defence-in-depth (NAT + firewall, VMnet + policy)
 - IDS vs IPS — detection vs active response
-- Custom Suricata rule authoring
 - Attack chain: recon → scan → exploit → document
 - Evidence correlation: alerts + logs + PCAPs
 - Professional penetration testing documentation
