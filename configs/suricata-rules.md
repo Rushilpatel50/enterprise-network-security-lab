@@ -19,12 +19,6 @@
 | emerging-policy.rules       | Protocol violations                  |
 | emerging-shellcode.rules    | Shellcode in payloads (DMZ only)     |
 
-## Custom Rules Written
-| SID     | Description                          |
-|---------|--------------------------------------|
-| 9000001 | Custom: Nmap scan threshold detect   |
-| 9000002 | Custom: SQLMap user agent detect     |
-| 9000003 | Custom: Nikto user agent detect      |
 
 ## Log Locations (on pfSense)
 - Alerts:    /var/log/suricata/*/alerts.log

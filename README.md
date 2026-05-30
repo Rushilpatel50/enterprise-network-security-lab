@@ -111,7 +111,6 @@ Internet (WAN)
 | Screenshot | Description |
 |------------|-------------|
 | ![Network Topology](diagrams/network-topology.png) | Four-VLAN segmented network with pfSense core |
-| ![VMware Networks](screenshots/phase-02-lab-setup/vmware-virtual-networks.png) | VMnet2–5 configured as isolated Host-only segments |
 
 ---
 
@@ -119,7 +118,6 @@ Internet (WAN)
 
 | Screenshot | Description |
 |------------|-------------|
-| ![Interfaces](screenshots/phase-03-pfsense-install/07-interfaces-renamed.png) | All five interfaces assigned and named in WebGUI |
 | ![DHCP Leases](screenshots/phase-04-network-config/03-dhcp-leases.png) | Active DHCP leases across all four VLANs |
 | ![NAT Rules](screenshots/phase-04-network-config/04-nat-outbound-rules.png) | Manual NAT with VLAN 99 rule deleted |
 
@@ -140,7 +138,6 @@ Internet (WAN)
 | Screenshot | Description |
 |------------|-------------|
 | ![Global Settings](screenshots/phase-07-suricata-setup/02-global-settings.png) | Emerging Threats Open ruleset configured |
-| ![Rules Enabled](screenshots/phase-07-suricata-setup/06-rules-categories-enabled.png) | Eight ET rule categories enabled on ATTACKER interface |
 | ![Both Running](screenshots/phase-07-suricata-setup/07-suricata-running-both.png) | Suricata active on ATTACKER and DMZ interfaces |
 
 ---
@@ -160,7 +157,6 @@ Internet (WAN)
 |------------|-------------|
 | ![SQLi Version](screenshots/phase-08-attack-simulation/06-sqli-version.png) | UNION SELECT extracts database version string |
 | ![SQLi Tables](screenshots/phase-08-attack-simulation/07-sqli-tables.png) | Information schema reveals table names |
-| ![SQLMap Running](screenshots/phase-08-attack-simulation/09-sqlmap-running.png) | SQLMap identifies vulnerable parameter automatically |
 
 
 ---
@@ -169,7 +165,6 @@ Internet (WAN)
 
 | Screenshot | Description |
 |------------|-------------|
-| ![XSS Alert](screenshots/phase-08-attack-simulation/11-xss-alert.png) | Reflected XSS popup confirms unsanitised input |
 | ![XSS Cookie](screenshots/phase-08-attack-simulation/12-xss-cookie.png) | Session cookie exposed via document.cookie |
 | ![XSS Stored](screenshots/phase-08-attack-simulation/13-xss-stored.png) | Stored XSS payload fires on every page reload |
 
@@ -182,26 +177,6 @@ Internet (WAN)
 | ![Blocked Pings](screenshots/phase-08-attack-simulation/14-blocked-attempts.png) | Kali pings to Management and Users return 100% loss |
 | ![Firewall Blocked](screenshots/phase-08-attack-simulation/15-firewall-logs-blocked-attempts.png) | pfSense logs show all blocked pivot attempts from 10.99.99.10 |
 
----
-
-### 📡 Detection Analysis
-
-| Screenshot | Description |
-|------------|-------------|
-| ![All Alerts](screenshots/phase-09-detection-analysis/01-suricata-alerts-full-list.png) | Full Suricata alert list across entire attack session |
-| ![Nmap Pattern](screenshots/phase-09-detection-analysis/05-wireshark-nmap-pattern.png) | Wireshark SYN flood pattern confirms Nmap scan |
-| ![SQLMap Stream](screenshots/phase-09-detection-analysis/06-wireshark-sqlmap-requests.png) | HTTP stream shows URL-encoded SQL payloads |
-
-
----
-
-### ✅ Final Validation
-
-| Screenshot | Description |
-|------------|-------------|
-| ![Validation Matrix](screenshots/phase-10-final-validation/01-kali-validation-matrix.png) | All 12 connectivity tests pass with expected results |
-| ![IDS Restored](screenshots/phase-10-final-validation/05-ids-mode-restored.png) | IDS mode restored, DVWA accessible after block removed |
-| ![Evidence Audit](screenshots/phase-10-final-validation/07-evidence-audit-complete.png) | Full evidence folder audit shows all files present |
 
 ---
 
