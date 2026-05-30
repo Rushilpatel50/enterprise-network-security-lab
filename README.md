@@ -198,22 +198,52 @@ Internet (WAN)
 
 ## Project Structure
 
+## 📁 Project Structure
+
 ```
 enterprise-network-security-lab/
 ├── README.md
+├── LICENSE
+├── configs/                              # All configuration documentation
+│   ├── dhcp-config.md
+│   ├── dvwa-config.md
+│   ├── firewall-rules.md
+│   ├── nat-config.md
+│   ├── pfsense-interface-plan.md
+│   ├── suricata-rules.md
+│   └── vm-specs.md
+├── diagrams/
+│   └── network-topology.png
+├── logs/                                 # Suricata EVE JSON, pfSense firewall logs
+│   ├── kali-command-outputs/
+│   ├── pfsense-firewall-logs/
+│   └── suricata-alerts/
+├── pcaps/                                # Wireshark captures (nmap, nikto, sqlmap, blocked)
+│   ├── blocked-intervlan.pcap
+│   ├── nikto-scan.pcap
+│   ├── nmap-scan.pcap
+│   ├── sqlmap-http.pcap
+│   └── sqlmap-test.pcap
 ├── report/
+│   ├── attack-detection-table.md
 │   ├── enterprise-network-security-report.md
 │   ├── firewall-rules-table.md
-│   ├── attack-detection-table.md
 │   └── lessons-learned.md
-├── diagrams/
-│   ├── network-topology.png
-│   └── vlan-design.png
-├── screenshots/          # 50+ screenshots across 10 phases
-├── pcaps/                # Wireshark captures (nmap, nikto, sqlmap, blocked)
-├── logs/                 # Suricata EVE JSON, pfSense firewall logs
-├── configs/              # All configuration documentation
-└── resume/               # Resume bullets and interview prep
+├── resume/                               # Resume bullets and interview prep
+│   ├── interview-explanation.md
+│   ├── quick-reference.md
+│   └── resume-bullets.md
+└── screenshots/                          # 50+ screenshots across 10 phases
+    ├── phase-01-architecture/
+    ├── phase-02-lab-setup/
+    ├── phase-03-pfsense-install/
+    ├── phase-04-network-config/
+    ├── phase-05-firewall-rules/
+    ├── phase-06-dvwa-deployment/
+    ├── phase-07-suricata-setup/
+    ├── phase-08-attack-simulation/
+    ├── phase-09-detection-analysis/
+    └── phase-10-final-validation/
 ```
 
 ---
