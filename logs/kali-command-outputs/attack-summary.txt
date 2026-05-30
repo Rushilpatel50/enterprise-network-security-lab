@@ -1,0 +1,17 @@
+# Phase 8 Attack Evidence Summary
+# Date: $(date)
+# Attacker IP: 10.99.99.10 (Kali Linux)
+# Target IP:   10.30.30.10 (DVWA)
+
+## Attacks Performed
+1. Nmap host discovery          → hosts found
+2. Nmap full port scan          → ports 22, 80, 3306 open
+3. Nmap web script scan         → web enumeration complete
+4. Nikto web scan               → vulnerabilities found
+5. Manual SQL injection         → credentials extracted
+6. SQLMap automated SQLi        → database dumped
+7. Manual XSS reflected         → alert popup confirmed
+8. Manual XSS stored            → persistent payload confirmed
+9. Blocked: access to MGMT      → confirmed blocked by firewall
+10. Blocked: access to USERS    → confirmed blocked by firewall
+11. Blocked: internet access    → confirmed blocked by NAT+firewall

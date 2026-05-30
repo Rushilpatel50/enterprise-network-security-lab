@@ -1,0 +1,27 @@
+# Nmap 7.95 scan initiated Fri May 29 02:47:10 2026 as: /usr/lib/nmap/nmap -sV -sC -O -p- -oN /home/kali/phase8-evidence/nmap/full-scan.txt -oX /home/kali/phase8-evidence/nmap/full-scan.xml 10.30.30.10
+Nmap scan report for 10.30.30.10
+Host is up (0.00064s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT    STATE  SERVICE VERSION
+80/tcp  open   http    Apache httpd 2.4.58 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/
+| http-git: 
+|   10.30.30.10:80/.git/
+|     Git repository found!
+|     Repository description: Unnamed repository; edit this file 'description' to name the...
+|     Remotes:
+|       https://github.com/digininja/DVWA.git
+|_    Project type: PHP application (guessed from .gitignore)
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+| http-title: Login :: Damn Vulnerable Web Application (DVWA)
+|_Requested resource was login.php
+443/tcp closed https
+Device type: general purpose|firewall
+Running (JUST GUESSING): Linux 4.X|2.6.X|5.X|3.X (94%), IPFire 2.X (88%)
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:2.6.32 cpe:/o:ipfire:ipfire:2.27 cpe:/o:linux:linux_kernel:5.15 cpe:/o:linux:linux_kernel:6.1 cpe:/o:linux:linux_kernel:3.10
+Aggressive OS guesses: Linux 4.19 - 5.15 (94%), Linux 2.6.32 (89%), Linux 4.0 - 4.4 (89%), Linux 4.15 (89%), IPFire 2.27 (Linux 5.15 - 6.1) (88%), Linux 5.4 (88%), Linux 2.6.32 or 3.10 (87%), Linux 2.6.32 - 2.6.35 (86%), Linux 2.6.32 - 2.6.39 (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 29 02:49:10 2026 -- 1 IP address (1 host up) scanned in 120.04 seconds

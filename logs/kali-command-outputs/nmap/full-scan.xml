@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Fri May 29 02:47:10 2026 as: /usr/lib/nmap/nmap -sV -sC -O -p- -oN /home/kali/phase8-evidence/nmap/full-scan.txt -oX /home/kali/phase8-evidence/nmap/full-scan.xml 10.30.30.10 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sV -sC -O -p- -oN /home/kali/phase8-evidence/nmap/full-scan.txt -oX /home/kali/phase8-evidence/nmap/full-scan.xml 10.30.30.10" start="1780037230" startstr="Fri May 29 02:47:10 2026" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.30.30.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1780037230" endtime="1780037350"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.30.30.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-79,81-442,444-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.58" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.58</cpe></service><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-git" output="&#xa;  10.30.30.10:80/.git/&#xa;    Git repository found!&#xa;    Repository description: Unnamed repository; edit this file &apos;description&apos; to name the...&#xa;    Remotes:&#xa;      https://github.com/digininja/DVWA.git&#xa;    Project type: PHP application (guessed from .gitignore)&#xa;"><table key="10.30.30.10:80/.git/">
+<elem key="repository-description">Unnamed repository; edit this file &apos;description&apos; to name the repository.&#xa;</elem>
+<table key="files-found">
+<elem key=".git/description">true</elem>
+<elem key=".git/config">true</elem>
+<elem key=".git/info/exclude">true</elem>
+<elem key=".git/COMMIT_EDITMSG">false</elem>
+<elem key=".gitignore">true</elem>
+</table>
+<table key="remotes">
+<elem>https://github.com/digininja/DVWA.git</elem>
+</table>
+<table key="project-type">
+<table key=".gitignore">
+<elem>PHP application</elem>
+</table>
+</table>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.58 (Ubuntu)"><elem>Apache/2.4.58 (Ubuntu)</elem>
+</script><script id="http-title" output="Login :: Damn Vulnerable Web Application (DVWA)&#xa;Requested resource was login.php"><elem key="title">Login :: Damn Vulnerable Web Application (DVWA)</elem>
+<elem key="redirect_url">login.php</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="63"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="443"/>
+<osmatch name="Linux 4.19 - 5.15" accuracy="94" line="70666">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="89" line="57632">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.0 - 4.4" accuracy="89" line="70090">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.15" accuracy="89" line="70477">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:4.15</cpe></osclass>
+</osmatch>
+<osmatch name="IPFire 2.27 (Linux 5.15 - 6.1)" accuracy="88" line="43915">
+<osclass type="firewall" vendor="IPFire" osfamily="IPFire" osgen="2.X" accuracy="88"><cpe>cpe:/o:ipfire:ipfire:2.27</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:5.15</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="6.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:6.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.4" accuracy="88" line="72306">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:5.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 or 3.10" accuracy="87" line="60129">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.35" accuracy="86" line="59620">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.39" accuracy="85" line="59739">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="1198193" lastboot="Fri May 15 05:59:17 2026"/>
+<tcpsequence index="263" difficulty="Good luck!" values="C6735824,BC6DE579,C377F2F2,3B709CE4,F5ADBC82,A6977E20"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="476AE1E0,476AE244,476AE2A9,476AE30D,476AE371,476AE3D6"/>
+<times srtt="640" rttvar="99" to="100000"/>
+</host>
+<runstats><finished time="1780037350" timestr="Fri May 29 02:49:10 2026" summary="Nmap done at Fri May 29 02:49:10 2026; 1 IP address (1 host up) scanned in 120.04 seconds" elapsed="120.04" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

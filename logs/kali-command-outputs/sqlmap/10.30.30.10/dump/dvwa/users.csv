@@ -1,0 +1,7 @@
+user_id,role,user,avatar,password,last_name,first_name,last_login,failed_login,account_enabled
+1,admin,admin,/hackable/users/admin.jpg,5f4dcc3b5aa765d61d8327deb882cf99 (password),admin,admin,2026-05-28 12:33:29,0,1
+2,user,gordonb,/hackable/users/gordonb.jpg,e99a18c428cb38d5f260853678922e03 (abc123),Brown,Gordon,2026-05-28 12:33:29,0,1
+3,user,1337,/hackable/users/1337.jpg,8d3533d75ae2c3966d7e0d4fcc69216b (charley),Me,Hack,2026-05-28 12:33:29,0,1
+4,user,pablo,/hackable/users/pablo.jpg,0d107d09f5bbe40cade3de5c71e9e9b7 (letmein),Picasso,Pablo,2026-05-28 12:33:29,0,1
+5,user,smithy,/hackable/users/smithy.jpg,5f4dcc3b5aa765d61d8327deb882cf99 (password),Smith,Bob,2026-05-28 12:33:29,0,1
+

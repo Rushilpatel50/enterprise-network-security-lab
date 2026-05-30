@@ -1,0 +1,35 @@
+# Nmap 7.95 scan initiated Fri May 29 02:51:13 2026 as: /usr/lib/nmap/nmap -sV -p 80 --script http-enum,http-headers,http-methods -oN /home/kali/phase8-evidence/nmap/web-scan.txt 10.30.30.10
+Nmap scan report for 10.30.30.10
+Host is up (0.00055s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.58 ((Ubuntu))
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+| http-headers: 
+|   Date: Fri, 29 May 2026 06:51:22 GMT
+|   Server: Apache/2.4.58 (Ubuntu)
+|   Set-Cookie: security=impossible; path=/; HttpOnly
+|   Set-Cookie: PHPSESSID=vtofsfl1g2in74c8q9g431471o; expires=Sat, 30 May 2026 06:51:22 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+|   Expires: Tue, 23 Jun 2009 12:00:00 GMT
+|   Cache-Control: no-cache, must-revalidate
+|   Pragma: no-cache
+|   Set-Cookie: PHPSESSID=5oja9772l028p3g04fdbieqa2j; expires=Sat, 30 May 2026 06:51:22 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+|   Connection: close
+|   Content-Type: text/html;charset=utf-8
+|   
+|_  (Request type: HEAD)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-enum: 
+|   /login.php: Possible admin folder
+|   /robots.txt: Robots file
+|   /.gitignore: Revision control ignore file
+|   /.git/HEAD: Git folder
+|   /config/: Potentially interesting directory w/ listing on 'apache/2.4.58 (ubuntu)'
+|   /database/: Potentially interesting directory w/ listing on 'apache/2.4.58 (ubuntu)'
+|   /docs/: Potentially interesting directory w/ listing on 'apache/2.4.58 (ubuntu)'
+|   /external/: Potentially interesting directory w/ listing on 'apache/2.4.58 (ubuntu)'
+|_  /tests/: Potentially interesting directory w/ listing on 'apache/2.4.58 (ubuntu)'
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 29 02:51:20 2026 -- 1 IP address (1 host up) scanned in 7.23 seconds

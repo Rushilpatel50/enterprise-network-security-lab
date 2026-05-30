@@ -1,0 +1,20 @@
+# Exclude large PCAP files if over GitHub 100MB limit
+# pcaps/*.pcapng
+
+# Exclude any accidental key or credential files
+*.key
+*.pem
+*.env
+secrets.txt
+
+# VMware files (never commit these)
+*.vmdk
+*.vmx
+*.vmxf
+*.nvram
+*.vmsd
+
+# OS clutter
+.DS_Store
+Thumbs.db
+pcaps/full-attack-session.pcapng
