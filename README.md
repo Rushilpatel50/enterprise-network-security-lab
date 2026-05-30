@@ -259,3 +259,9 @@ Full phase-by-phase setup guide available in `/configs/`.
 🔗 LinkedIn: [Rushil Patel](https://www.linkedin.com/in/rushil-patel-998669402/)
 
 💻 GitHub: [Rushilpatel50](https://github.com/Rushilpatel50)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
