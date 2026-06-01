@@ -18,3 +18,4 @@ secrets.txt
 .DS_Store
 Thumbs.db
 pcaps/full-attack-session.pcapng
+resume/

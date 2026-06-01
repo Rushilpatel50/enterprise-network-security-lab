@@ -146,7 +146,6 @@ Internet (WAN)
 
 | Screenshot | Description |
 |------------|-------------|
-| ![Host Discovery](screenshots/phase-08-attack-simulation/02-nmap-results.png) | Nmap host discovery finds pfSense and DVWA |
 | ![Port Scan](screenshots/phase-08-attack-simulation/02-nmap-results.png) | Full port scan reveals ports 22, 80, 3306 open |
 
 ---
@@ -195,8 +194,6 @@ Internet (WAN)
 | Internet breakout   | curl    | —                                 | BLOCKED ✅      |
 
 ---
-
-## Project Structure
 
 ## 📁 Project Structure
 
