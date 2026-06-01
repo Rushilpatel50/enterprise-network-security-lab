@@ -226,10 +226,6 @@ enterprise-network-security-lab/
 │   ├── enterprise-network-security-report.md
 │   ├── firewall-rules-table.md
 │   └── lessons-learned.md
-├── resume/                               # Resume bullets and interview prep
-│   ├── interview-explanation.md
-│   ├── quick-reference.md
-│   └── resume-bullets.md
 └── screenshots/                          # 50+ screenshots across 10 phases
     ├── phase-01-architecture/
     ├── phase-02-lab-setup/
@@ -279,13 +275,12 @@ Full phase-by-phase setup guide available in `/configs/`.
 
 ---
 
-## Author
+## 👤 Author
 
 **Rushil Patel**
 
-🔗 LinkedIn: [Rushil Patel](https://www.linkedin.com/in/rushil-patel-998669402/)
-
-💻 GitHub: [Rushilpatel50](https://github.com/Rushilpatel50)
+[![GitHub](https://img.shields.io/badge/GitHub-Rushilpatel50-181717?logo=github)](https://github.com/Rushilpatel50)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://linkedin.com/in/rushil-patel-998669402/)
 
 ---
 
