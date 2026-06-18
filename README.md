@@ -280,7 +280,7 @@ Full phase-by-phase setup guide available in `/configs/`.
 **Rushil Patel**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Rushilpatel50-181717?logo=github)](https://github.com/Rushilpatel50)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/rushil-patel-13a71a39b/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/rushil-patel-cs/)
 
 ---
 
